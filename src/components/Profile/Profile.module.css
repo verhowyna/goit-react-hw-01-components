@@ -57,7 +57,7 @@ body {
   padding-left: 0;
 }
 
-.stats-item {
+.statsItem {
   display: flex;
   flex-direction: column;
   gap: 8px;
