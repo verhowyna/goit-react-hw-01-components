@@ -1,8 +1,9 @@
 import user from '../../user.json';
+import './Profile.css';
 
 export const Profile = ({username, avatar, tag, location, stats}) => {
     return ( <div className="profile">
-  <div clasNames="description">
+  <div className="description">
     <img
       src={user.avatar}
       alt={user.username}
@@ -19,12 +20,12 @@ export const Profile = ({username, avatar, tag, location, stats}) => {
       <span className="quantity">{[user.stats.followers]}</span>
     </li>
     <li className="stats-item">
-      <span class="label">Views</span>
-      <span class="quantity">{[user.stats.views]}</span>
+      <span className="label">Views</span>
+      <span className="quantity">{[user.stats.views]}</span>
     </li>
     <li className="stats-item">
-      <span class="label">Likes</span>
-      <span class="quantity">{[user.stats.likes]}</span>
+      <span className="label">Likes</span>
+      <span className="quantity">{[user.stats.likes]}</span>
     </li>
   </ul>
 </div>  )
