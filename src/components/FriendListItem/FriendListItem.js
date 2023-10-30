@@ -1,6 +1,7 @@
 import friend from '../../friends.json';
 import css from './FriendListItem.module.css';
 
+
 export const FriendListItem = () => {
    return friend.map(({ id, name, avatar, isOnline }) => {
     return (
