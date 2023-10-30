@@ -1,14 +1,17 @@
 
-import { Title } from './Title';
-import { Stats } from './Stats';
+import { Title } from '../Title/Title';
+import { Stats } from '../Stats/Stats';
+import css from './Statistics.module.css'
 
 export const Statistics = () => {
     return (
-    <>
-            <Title />
-            <ul>
-                <Stats />
-            </ul>
+        <>
+            <section className={css.statistics}>
+                <Title />
+                <ul className={css.statList}>
+                    <Stats />
+                </ul>
+            </section>
         </>
     )
 }
