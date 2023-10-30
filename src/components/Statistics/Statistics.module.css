@@ -8,6 +8,10 @@
   box-shadow: rgb(53, 52, 52) 0 4px 4px 0;
 }
 
+.wrap {
+  height: 80px;
+}
+
 .statList {
   display: flex;
   width: 100%;

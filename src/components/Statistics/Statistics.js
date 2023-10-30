@@ -7,7 +7,9 @@ export const Statistics = () => {
     return (
         <>
             <section className={css.statistics}>
-                <Title />
+                <div className={css.wrap}>
+                    <Title title />
+                </div>
                 <ul className={css.statList}>
                     <Stats />
                 </ul>

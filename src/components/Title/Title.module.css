@@ -1,8 +1,14 @@
 .title {
-  height: 80px;
+  position: relative;
+  top: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
+  text-transform: uppercase;
   color: gray;
   margin: 0;
+}
+
+.hide {
+  display: none;
 }

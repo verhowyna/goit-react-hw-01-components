@@ -1,5 +1,5 @@
 import { Statistics } from "components/Statistics/Statistics";
-import { Profile } from "../Profile/Profile";
+import { Profile } from "./Profile/Profile";
 
 
 
