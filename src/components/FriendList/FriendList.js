@@ -7,6 +7,5 @@ export const FriendList = () => {
         <ul className={css.list}>
             <FriendListItem />
         </ul>
-           
     )
 }
