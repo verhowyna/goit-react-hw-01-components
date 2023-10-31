@@ -1,9 +1,11 @@
 import { SetRow } from "../SetRow/SetRow"
+import css from './TransactionHistory.module.css'
 
 export const TransactionHistory = () => {
-    return (
-        <table class="transaction-history">
-  <thead>
+  return (
+      <div className={css.tableWraper}>
+        <table className={css.transactionHistory}>
+  <thead className={css.head}>
     <tr>
       <th>Type</th>
       <th>Amount</th>
@@ -15,5 +17,6 @@ export const TransactionHistory = () => {
     <SetRow />
   </tbody>
 </table>
+</div >
     )
 }

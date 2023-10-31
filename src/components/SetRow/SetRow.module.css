@@ -1,0 +1,12 @@
+.row {
+  height: 20px;
+}
+
+tr:nth-child(even) {
+  background-color: #b6b3b3;
+}
+
+td {
+  padding-left: 30px;
+  border: 1px solid black;
+}

@@ -1,0 +1,23 @@
+.tableWraper {
+  width: 360px;
+  margin: 30px auto;
+  background-color: #fff;
+  box-shadow: rgb(53, 52, 52) 0 4px 4px 0;
+}
+
+.transactionHistory {
+  width: 100%;
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+.head {
+  height: 40px;
+  background-color: blue;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+th {
+  border: 1px solid black;
+}
