@@ -1,22 +1,27 @@
-import { SetRow } from "../SetRow/SetRow"
-import css from './TransactionHistory.module.css'
+import css from './TransactionHistory.module.css';
 
-export const TransactionHistory = () => {
+export const TransactionHistory = ({ items }) => {
   return (
-      <div className={css.tableWraper}>
-        <table className={css.transactionHistory}>
-  <thead className={css.head}>
-    <tr>
-      <th>Type</th>
-      <th>Amount</th>
-      <th>Currency</th>
-    </tr>
-  </thead>
+    <div className={css.tableWraper}>
+      <table className={css.transactionHistory}>
+        <thead className={css.head}>
+          <tr>
+            <th>Type</th>
+            <th>Amount</th>
+            <th>Currency</th>
+          </tr>
+        </thead>
 
-  <tbody>
-    <SetRow />
-  </tbody>
-</table>
-</div >
-    )
-}
+        <tbody>
+          {items.map(item => (
+            <tr className={css.row} key={item.id}>
+              <td>{item.type}</td>
+              <td>{item.amount}</td>
+              <td>{item.currency}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  );
+};
