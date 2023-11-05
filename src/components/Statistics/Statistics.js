@@ -4,7 +4,7 @@ export const Statistics = ({ title, stats }) => {
   return (
     <section className={css.statistics}>
       <div className={css.wrap}>
-        <h2 className={css.title}>{title}</h2>
+        {title && <h2 className={css.title}>{title}</h2>}
       </div>
       <ul className={css.statList}>
         {stats.map(item => (
